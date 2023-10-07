@@ -1,0 +1,244 @@
+-------------------:) How to genrate a ecdsa key (:-----------------------------
+
+a) ssh-keygen -t ecdsa -b 256
+
+my pc ecdsa key : C:\Users\Geonix\.ssh
+ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGMuDDuXGq3r6ukZkkudX1iEma6bQDz/fM04npRgt2rW4YpxdKhM3tEvSkDrngSnwbYYFRHgiBuyY6RZCxWNxn8= geonix@DESKTOP-HC87BDP
+
+
+
+
+  ---------------- :) How to genrate a ssh(Secure Shell Protocol) key (:-----------------------
+            
+a) ssh-keygen -t ed25519 -C "02someshsharma@gmail.com"
+b) eval "$(ssh-agent -s)"
+c) ssh-add ~/.ssh/id_ed25519
+d) ssh-add ~/.ssh/id_rsa
+
+------------------- (:  remember  points  :) --------------------------------------------------
+
+
+Tracked - files that Git knows about and are added to the repository
+Untracked - files that are in your working directory, but not added to the repository  
+
+Staged files : are files that are ready to be committed to the repository you are working on.  git add .  / git add --all  / git add -A  used for stage all files
+
+
+------------------------ (: initialize / delete the git  :)  -------------------------
+
+:) git init  :- initialize an git 
+
+:) rm -rf .git  :- delete .git file
+
+
+
+------------------------ (:  git clone    :)  --------------------
+                         
+                             
+
+:) git clone url  :- clone a git repository
+
+:) git remote add origin url        :- cloning a project if .git already exists
+  
+:) git clone -branch branchname clone url      -- clone from a specific branch
+
+--------------------------(:  git status  :) ------------------------------------
+
+:)  git status    -- check current status of our project on git 
+
+:) git status --short    -- short status 
+
+
+
+------------------- (: stage the files of project :) -----------------------
+
+:) git add .
+
+:) git add filename
+
+:)  git add --all   :- to stage all files
+
+:) git add -A 
+
+:) git add --a     :- add all files to staging area 
+
+
+------------------- :) git commit (: --------------------------------
+
+
+ :) git commit -m "commit message"
+
+ :) git commit  -a -m ""   : direct add commit skipping stagging cmd (without doing git add . ) .
+
+ :) git commit -am "commit message"
+
+ :) git reset --hard HEAD~1    : to delete last commit 
+
+---------------------:) list commits (: ------------------------
+
+ :) git log --full-history    :- history of all loges
+
+ :) git log -p   :- check commit with changes.
+
+ :) git log --oneline       :- show all commits in sigle line 
+
+ :) git log --oneline     :-  list commits in oneline format
+
+:) git log --merges          -- check all merges.
+
+-------------------  (: othe imp  :)---------------------
+
+:) pwd                 -- used for check present woriking directory 
+
+:) ls                  -- list all files
+ 
+:) cd /c  or cd c:  or cd ../   -- used for directory   
+
+:) Q                  --  : is used for Quit the command
+
+--------- (: user details :)  --------------------
+
+
+7) git config global --user.name "somesh" 
+
+8) git config global --user.email "ss"
+
+9) git config --list
+
+10) git config user.name
+
+11) git config user.email
+
+
+
+
+------------------(:     :) ---------------------
+
+:) git diff      : compares woriking dir with statging area
+
+:) git diff --staged   :- compares last commit to stagging area 
+
+:) git restore filename   :- to discard changes.
+
+:) git reset --hard   : come back to previous commit
+
+:) git clean -f -x    : remove untracked files 
+
+
+
+----------------- (: current repo   :) ---------------------
+
+
+:)  .git/config  : used for find current repo of project 
+
+
+----------------- (:   :) ---------------------
+
+:)  rm fileName   :- to delete a file  
+
+:)  mv fileName NewFIleName      :- to rename a file
+
+:)  rm --cached filename  :- for stopping tracking of file 
+
+:)  mkdir myproject    :- create a new folder 
+
+------------------- --(: git stash :)-- ----------------------------
+
+:) git stash   :-  is used for save changes without commiting them 
+
+:) git stash -m "message"  :- create stash with message
+   
+    git stash save "message"
+
+:) git stash list    :- get list of all stashes  stash index  0 was latest stash
+
+:) git stash pop   :- empty the list of stash and apply changes back to our work 
+
+24) git stash pop stashName  :- for apply changes specific index   
+    git stash pop stash@{index}
+
+25) git stash apply
+
+26) git stash drop stashName    :- delete a stash
+
+27) git stash clear   :-  delete all stashes 
+
+28) git stash -u    :- saved untracted file in  stash
+
+:) git stash show   :- show changes in stash 
+
+:) git stash show -p    :- show more details about changes
+
+
+
+-------------------------:) git fun (:-----------------
+
+:) git config --global alias.shorCmdName cmdName   :- make shortname of cmd 
+
+
+  -------------------------- :) git checkout (:----------------------------------
+
+:) git checkout -b newBranchName      :- creates a new branch with all current code
+
+:) git checkout branchname     : to change branch.
+
+:) git checkout branchname --filename   -- to get privious commit file
+
+:) git commit -m "message "   : add a commit 
+
+:) git commit  -a -m ""   : direct add commit skipping stagging cmd (without doing git add . ) .
+
+:) git commit --amend -m "new changed commit"  : -     This new commit replaces the latest commit entirely.
+
+:) mkdir myproject    :- create a new folder 
+
+:) git status --short  : short status of our project status
+
+:) git checkout commitID -- path/to/file      -- discard the changes in single file
+
+
+--------------   Git branch  ----------------------
+
+:) git branch     -- check the current branch name  
+
+:) git checkout -b newBranchName      :- creates a new branch
+
+:) git switch -c "newbranch name"     :- creates a new branch
+
+:) git branch "new Branch name "      -- creates a new branch 
+
+:) git banch -M new nameofbranch          --change the current branch name 
+
+:)  git merge brancheName               -- merge the branch with current branch
+
+:)  git branch -d branchname        -- delete a branch after merge
+
+:)  git branch -D branchname           --- delete branch without merging
+
+:) git checkout branchname     -- to change branch.
+   
+:) git branch -r                      -- list all remote branches names
+
+:) git ls-remote                  -- remote branches details
+
+:) git push -u origin <branch-name>  -- not clear
+
+:) git push origin <branchname>
+
+
+--------------------------- Git Reset ------------------------------------
+
+
+:) git reset --hard Head     -- this will reset all changes to tha last commit 
+
+:) git reset                  -- to unstage all files 
+
+:) git checkout commitID -- path/to/file      -- discard the changes in single file
+ 
+
+
+    --------------------- Git Pull/ Push --------------------------------
+
+:) git pull origin branchName    -- pull from branch name
+
+:) git push -u origin <branch-name>  -- not clear
