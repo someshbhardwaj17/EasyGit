@@ -3,10 +3,7 @@
 a) ssh-keygen -t ecdsa -b 256
 
 my pc ecdsa key : C:\Users\Geonix\.ssh
-ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGMuDDuXGq3r6ukZkkudX1iEma6bQDz/fM04npRgt2rW4YpxdKhM3tEvSkDrngSnwbYYFRHgiBuyY6RZCxWNxn8= geonix@DESKTOP-HC87BDP
-
-
-
+ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMscSCwPM0uAOUzD9Gj+v7ODIdRt5kreyqWAAhhXcTBlDevjmefVz9KQmmIsUpKru4uD1YCp2nLkICWgJuZFYDk= geonix@DESKTOP-HC87BDP
 
   ---------------- :) How to genrate a ssh(Secure Shell Protocol) key (:-----------------------
             
@@ -234,6 +231,8 @@ Staged files : are files that are ready to be committed to the repository you ar
 :) git reset                  -- to unstage all files 
 
 :) git checkout commitID -- path/to/file      -- discard the changes in single file
+
+:) git clean -f  : to remove untracked files
  
 
 
