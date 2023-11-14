@@ -27,6 +27,7 @@ Staged files : are files that are ready to be committed to the repository you ar
 
 :) rm -rf .git  :- delete .git file
 
+:) git remote get-url origin     -- Check Clone url of my project
 
 
 ------------------------ (:  git clone    :)  --------------------
@@ -241,3 +242,5 @@ Staged files : are files that are ready to be committed to the repository you ar
 :) git pull origin branchName    -- pull from branch name
 
 :) git push -u origin <branch-name>  -- not clear
+
+
