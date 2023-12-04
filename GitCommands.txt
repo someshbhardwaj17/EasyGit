@@ -27,7 +27,7 @@ Staged files : are files that are ready to be committed to the repository you ar
 
 :) rm -rf .git  :- delete .git file
 
-:) git remote get-url origin     -- Check Clone url of my project
+
 
 
 ------------------------ (:  git clone    :)  --------------------
@@ -223,6 +223,7 @@ Staged files : are files that are ready to be committed to the repository you ar
 
 :) git push origin <branchname>
 
+:) git remote show origin        -- checking current repo url
 
 --------------------------- Git Reset ------------------------------------
 
@@ -234,6 +235,7 @@ Staged files : are files that are ready to be committed to the repository you ar
 :) git checkout commitID -- path/to/file      -- discard the changes in single file
 
 :) git clean -f  : to remove untracked files
+:) git clean -f -d to remove untracked directories.
  
 
 
