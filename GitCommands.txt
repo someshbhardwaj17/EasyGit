@@ -18,6 +18,10 @@ b) eval "$(ssh-agent -s)"
 c) ssh-add ~/.ssh/id_ed25519
 d) ssh-add ~/.ssh/id_rsa
 
+------------------:) How to genrate sha1 key :)--------------------------
+run this in java/jre bin folder
+SHA1 & SHA256 command : keytool -keystore D:\Rove\Fishing" "game\user.keystore -list -v
+
 ------------------- (:  remember  points  :) --------------------------------------------------
 
 
@@ -133,7 +137,7 @@ Staged files : are files that are ready to be committed to the repository you ar
 ----------------- (: current repo   :) ---------------------
 
 
-:)  .git/config  : used for find current repo of project 
+:)  .git/config    ,  git remote show origin  : used for find current repo of project 
 
 
 ----------------- (:   :) ---------------------
@@ -184,6 +188,13 @@ Staged files : are files that are ready to be committed to the repository you ar
 
 :) git checkout -b newBranchName      :- creates a new branch with all current code
 
+Note : if you have new changes and you have to push them in new branch then 
+1) First create new branch  ( git checkout -b newBranchName ) 
+2) Then add this changes . (git add .)
+3) Commit this changes.
+4) Push these changes to this new branch.
+
+
 :) git checkout branchname     : to change branch.
 
 :) git checkout branchname --filename   -- to get privious commit file
@@ -199,6 +210,8 @@ Staged files : are files that are ready to be committed to the repository you ar
 :) git status --short  : short status of our project status
 
 :) git checkout commitID -- path/to/file      -- discard the changes in single file
+
+
 
 
 --------------   Git branch  ----------------------
