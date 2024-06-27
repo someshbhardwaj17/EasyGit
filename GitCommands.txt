@@ -1,3 +1,4 @@
+//test code
 ------------------:) How to update sdk in unity (:-------------------------
 open cmd in bin folder - D:\UnityEditor\2022.3.14f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\tools\bin
 
