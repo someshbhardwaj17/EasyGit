@@ -46,9 +46,10 @@ Staged files : are files that are ready to be committed to the repository you ar
 
 :) git clone url  :- clone a git repository
 
-:) git remote add origin url        :- cloning a project if .git already exists
+:) git remote add origin url        :- cloning a project if .git already exists    
+   git remote add origin https://github.com/someshbhardwaj17/EasyGit.git
   
-:) git clone -branch branchname clone url      -- clone from a specific branch
+:) git clone -b branchname clone url      -- clone from a specific branch
 
 --------------------------(:  git status  :) ------------------------------------
 
