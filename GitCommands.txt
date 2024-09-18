@@ -1,3 +1,4 @@
+//test code
 ------------------:) How to update sdk in unity (:-------------------------
 open cmd in bin folder - D:\UnityEditor\2022.3.14f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\tools\bin
 
@@ -46,10 +47,9 @@ Staged files : are files that are ready to be committed to the repository you ar
 
 :) git clone url  :- clone a git repository
 
-:) git remote add origin url        :- cloning a project if .git already exists    
-   git remote add origin https://github.com/someshbhardwaj17/EasyGit.git
+:) git remote add origin url   :- cloning a project if .git already exists
   
-:) git clone -b branchname clone url      -- clone from a specific branch
+:) git clone -branch branchname clone url      -- clone from a specific branch
 
 --------------------------(:  git status  :) ------------------------------------
 
@@ -82,6 +82,8 @@ Staged files : are files that are ready to be committed to the repository you ar
  :) git commit -am "commit message"
 
  :) git reset --hard HEAD~1    : to delete last commit 
+
+ :) git restore file    :to resest a file
 
 ---------------------:) list commits (: ------------------------
 
@@ -230,6 +232,8 @@ Note : if you have new changes and you have to push them in new branch then
 :)  git merge brancheName               -- merge the branch with current branch
 
 :)  git branch -d branchname        -- delete a branch after merge
+
+:) git push origin -d branch-name   -- delete a branch on remote
 
 :)  git branch -D branchname           --- delete branch without merging
 
