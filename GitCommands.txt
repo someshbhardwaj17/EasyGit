@@ -197,6 +197,7 @@ Note : if you have new changes and you have to push them in new branch then
 3) Commit this changes.
 4) Push these changes to this new branch.
 
+:) git checkout --orphan newbranchname  create a new empty branch , with no commits history.
 
 :) git checkout branchname     : to change branch.
 
